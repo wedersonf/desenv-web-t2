@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+
+    <title>GitHub API</title>
+
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+  </head>
+
+  <body class="flex flex-col bg-zinc-800 text-white antialiased min-h-screen">
+    <header class="flex items-center justify-center gap-3 bg-zinc-900 h-48">
+      <img src="./assets/github.png" alt="" class="size-8">
+      <h1 class="text-zinc-100/50 text-3xl font-semibold">Github API</h1>
+    </header>
+
+    <section class="flex flex-col items-center w-full max-w-screen-md mx-auto -mt-6 px-4 md:px-0">
+      <form id="form" class="flex flex-col md:grid md:grid-cols-7 gap-2 w-full">
+        <input id="username" type="text" placeholder="Usuário ou Organização" class="text-zinc-900 rounded-md col-span-2" />
+        <input id="repo" type="text" placeholder="Nome do repositório" class="text-zinc-900 rounded-md w-full col-span-3" />
+        <button type="submit" class="flex items-center justify-center font-medium bg-emerald-700 p-2 rounded-md w-full hover:bg-emerald-700/90 col-span-2">Buscar repositório</button>
+      </form>
+    </section>
+
+    <div id="summary" class="px-4 md:px-0"></div>
+
+    <main id="repo-commits" class="flex flex-col w-full max-w-screen-md mx-auto mt-6 gap-2 flex-1 px-4 md:px-0"></main>
+
+    <footer class="flex w-full items-center justify-center border-t border-zinc-600 py-2 px-4 mt-6 mb-2 mx-auto">
+      <span class="text-zinc-500 text-sm">Desenvolvido por Wederson Fagundes para Disciplina de Desenvolvimento Web - 2024a</span>
+    </footer>
+  </body>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="/app.js"></script>
+</html>
